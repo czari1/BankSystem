@@ -14,7 +14,7 @@ public:
 class InsufficientFundsException : public std::runtime_error {
 public:
     InsufficientFundsException(double requested, double available)
-    : std::runtime_error("Not enought balance: requested" 
+    : std::runtime_error("Not enought balance: requested " 
                         + std::to_string(requested) 
                         + " PLN, available: "
                         + std::to_string(available)

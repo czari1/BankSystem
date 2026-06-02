@@ -43,10 +43,10 @@ void Bank::listAllAccounts() const {
     std::cout << "\nAll accounts in " << m_bankName << ":\n";
 
     for (const auto& acc : m_accounts) {
-        std::cout << "Account number: " << acc->getNumber()
-                  << "Owners name: " << acc->getName()
-                  << "Owners surname: "  << acc->getSurname()
-                  << "Balance: " << acc->getBalance() << " PLN\n";
+        std::cout << "Account number: " << acc->getNumber() << "\n"
+                  << "Owner's name: " << acc->getName() << "\n"
+                  << "Owner's surname: "  << acc->getSurname() << "\n"
+                  << "Balance: " << acc->getBalance() << " PLN\n\n"; 
     }
 
     std::cout << "\n";

@@ -31,7 +31,7 @@ namespace HelperFunctions {
 
 namespace CLI {
     int showMainMenu() {
-        std::cout << "Bank System";
+        std::cout << "Bank System\n";
         std::cout << "1. Create new account. \n";
         std::cout << "2. Deposit funds. \n";
         std::cout << "3. Withdraw funds. \n";
@@ -86,13 +86,13 @@ namespace CLI {
 
     void handleWithdraw(Bank& bank) {
         std::cout << "\nBalance withdrawal\n";
-        std::string number = HelperFunctions::readLine("Accoiunt number: ");
+        std::string number = HelperFunctions::readLine("Account number: ");
         double amount = HelperFunctions::readDouble("Amount (PLN) : ");
 
         try {
             Account& acc = bank.findAccount(number);
             acc.withdraw(amount);
-            std::cout << "Withdrwawal completed sucsessfully. New balance: "
+            std::cout << "Withdrwawal completed successfully. New balance: "
                     << acc.getBalance() << " PLN\n";
         } catch (const std::exception& e) {
             std::cout << "Error: " << e.what() << "\n";
@@ -100,7 +100,7 @@ namespace CLI {
     }
 
     void handleShowAccount(Bank& bank) {
-        std::cout << "\nAccount infromation\n";
+        std::cout << "\nAccount information\n";
         std::string number = HelperFunctions::readLine("Account number: ");
 
         try {

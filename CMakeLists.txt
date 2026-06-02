@@ -17,5 +17,5 @@ add_executable(minibank
     src/main.cpp
     src/Account.cpp
     src/Bank.cpp
-    src/Menu.cpp
+    src/CLI.cpp
 )
