@@ -27,10 +27,11 @@ cmake --build build
 ├── include/
 │   ├── Account.h   # Klasa konta + wyjątki domenowe
 │   ├── Bank.h      # Klasa banku zarządzająca kontami
-│   └── Menu.h      # Interfejs konsolowy
+│   ├── CLI.h      # Interfejs konsolowy
+│   └── Exceptions.hpp
 └── src/
     ├── Account.cpp
     ├── Bank.cpp
-    ├── Menu.cpp
+    ├── CLI.cpp
     └── main.cpp
 ```

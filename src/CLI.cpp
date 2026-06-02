@@ -17,7 +17,7 @@ namespace HelperFunctions {
             }
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Incorrect value.PLease try again.\n";
+            std::cout << "Incorrect value. PLease try again.\n";
         }    
     }
 
@@ -77,7 +77,7 @@ namespace CLI {
         try {
             Account& acc = bank.findAccount(number);
             acc.deposit(amount);
-            std::cout << "Deposit completed sucsessfully. New balance: "
+            std::cout << "Deposit completed successfully. New balance: "
                     << acc.getBalance() << " PLN\n";
         } catch (const std::exception& e) {
             std::cout << "Error: " << e.what() << "\n";
@@ -92,7 +92,7 @@ namespace CLI {
         try {
             Account& acc = bank.findAccount(number);
             acc.withdraw(amount);
-            std::cout << "Withdrwawal completed successfully. New balance: "
+            std::cout << "Withdrawal completed successfully. New balance: "
                     << acc.getBalance() << " PLN\n";
         } catch (const std::exception& e) {
             std::cout << "Error: " << e.what() << "\n";
